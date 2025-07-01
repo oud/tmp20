@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20250701153953"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "demande_xrm",
+  "fields": [
+    {
+      "fieldName": "aI",
+      "fieldType": "Status",
+      "fieldValues": "RECU,TRAITE"
+    },
+    {
+      "fieldName": "iVS",
+      "fieldType": "Status",
+      "fieldValues": "RECU,TRAITE"
+    }
+  ],
+  "name": "DemandeXRM",
+  "relationships": [
+    {
+      "otherEntityName": "pmEntreprise",
+      "relationshipName": "pmEntreprise",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "miseEnGestion",
+      "relationshipName": "miseEnGestion",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
